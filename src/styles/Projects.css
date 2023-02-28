@@ -1,0 +1,59 @@
+.page-container > .projects-container {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.page-container > .project-line {
+    color: hsl(230, 20%, 60%);
+    font-size: 1.5rem;
+}
+
+.project {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: hsl(230, 40%, 60%);
+    outline-style: groove;
+    margin-right: .4rem;
+    margin-top: 2rem;
+    margin-bottom: .75rem;
+    max-width: 8rem;
+}
+
+.project > div {
+    padding: 1rem 0;
+    font-size: 1rem;
+    max-width: inherit;
+    word-wrap: break-word;
+}
+
+.project > a {
+    display: inline-block;
+    color: #000;
+    background-color: hsl(230, 20%, 60%);
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin: auto .5rem .5rem .5rem;
+    text-align: center;
+    height: min-content;
+}
+
+.project > a:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 648px) {
+    .page-container > .projects-container {
+        width: 100%;
+    }
+
+    .project {
+        min-width: 8rem;
+        margin-top: 3rem;
+    }
+}
